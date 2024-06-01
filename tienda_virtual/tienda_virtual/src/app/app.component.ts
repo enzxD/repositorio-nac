@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { CabezaComponent } from "./cabeza/cabeza.component";
-import { ProductosComponent } from "./productos/productos.component";
+import { NavComponent } from "./nav/nav.component";
+import { TarjetasComponent } from "./tarjetas/tarjetas.component";
+import { FooterComponent } from "./footer/footer.component";
+import { ProductosComponent } from './productos/productos.component';
+
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HomeComponent, CabezaComponent, ProductosComponent]
+    imports: [RouterOutlet, HomeComponent, ProductosComponent, NavComponent, TarjetasComponent, FooterComponent]
 })
 export class AppComponent {
   title = 'tienda_virtual';

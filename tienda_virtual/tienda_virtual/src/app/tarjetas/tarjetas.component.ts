@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './tarjetas.component.css'
 })
 export class TarjetasComponent {
-
+  producto = {
+    titulo: 'Maaquina de Afeitar',
+    descripcion: 're mil re sacada',
+    precio: 99.99 + 'Dolares'
+  };
 }
