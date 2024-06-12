@@ -8,3 +8,21 @@
   align-items: center;
   font-size: 45px;
 }
+.carrusel {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin:auto;
+  
+  
+}
+.carrusel img {
+  width: 400px;
+  border: 1px solid #ddd;
+  height: auto;
+  object-fit: cover;
+  margin-left : 10px;
+  
+}
