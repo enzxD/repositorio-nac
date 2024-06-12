@@ -1,14 +1,9 @@
-export interface productos{
-    name: string,
-    categoria: number,
-    moneda: productosprecio,
-    descripcion: string,
-    precio: number
-
+export interface Productos {
+    id:          number;
+    title:       string;
+    price:       number;
+    description: string;
+    image:       string;
 }
 
-export interface productosprecio{
-    costo: number,
-    tasa: number,
-    precio: number
-}
+

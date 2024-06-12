@@ -1,9 +1,8 @@
-<div class="card">
-  <img src="ruta_a_la_imagen.jpg" alt="{{ producto.titulo }}" class="card-img-top">
-  <div class="card-body">
-    <h5 class="card-title">{{ producto.titulo }}</h5>
-    <p class="card-text">{{ producto.descripcion }}</p>
-    <p class="card-price">${{ producto.precio }}</p>
-    <a href="#" class="btn btn-primary">Ver Detalles</a>
+<div class="tarjeta">
+  <img src="{{ producto?.image }}" alt="Imagen de {{ producto?.title }}">
+  <div class="contenedor">
+    <h2>{{ producto?.title?.slice(0, 30) }}</h2>
+    <p>{{ producto?.description?.slice(0, 100) }}</p>
+    <h2>{{ producto?.price | currency }}</h2>
   </div>
 </div>

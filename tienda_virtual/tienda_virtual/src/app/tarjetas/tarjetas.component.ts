@@ -1,16 +1,22 @@
-import { Component } from '@angular/core';
-
+import { Component, Input, inject } from '@angular/core';
+import { Router } from '@angular/router';
+import { Productos } from '../interfaces/producto';
+import { CurrencyPipe, SlicePipe } from '@angular/common';
 @Component({
   selector: 'app-tarjetas',
   standalone: true,
-  imports: [],
+  imports: [CurrencyPipe, SlicePipe],
   templateUrl: './tarjetas.component.html',
   styleUrl: './tarjetas.component.css'
 })
 export class TarjetasComponent {
-  producto = {
-    titulo: 'Maaquina de Afeitar',
-    descripcion: 're mil re sacada',
-    precio: 99.99 + 'Dolares'
-  };
+
+  private _router = inject(Router)
+  
+  @Input() producto?: Productos;
+
+  verMas(id?: number)
+  {
+    this._router.navigate(['/productos', id]);
+  }
 }

@@ -1,45 +1,13 @@
-.card {
-    width: 300px; /* Ancho de la tarjeta */
-    border: 1px solid #ccc; /* Borde de la tarjeta */
-    border-radius: 5px; /* Borde redondeado */
-    margin: 20px; /* Margen exterior */
-    display: inline-block; /* Muestra en línea */
-  }
+.tarjeta {
+  width: 20rem;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
   
-  .card-img-top {
-    width: 100%; /* Ancho completo de la imagen */
-    height: auto; /* Altura automática de la imagen */
-    border-top-left-radius: 5px; /* Borde redondeado superior izquierdo */
-    border-top-right-radius: 5px; /* Borde redondeado superior derecho */
-  }
-  
-  .card-body {
-    padding: 20px; /* Espaciado interno */
-  }
-  
-  .card-title {
-    font-size: 1.25rem; /* Tamaño de la fuente del título */
-    margin-bottom: 10px; /* Margen inferior */
-  }
-  
-  .card-text {
-    color: #666; /* Color del texto de la descripción */
-  }
-  
-  .card-price {
-    font-weight: bold; /* Texto en negrita */
-    margin-bottom: 10px; /* Margen inferior */
-  }
-  
-  .btn {
-    padding: 8px 16px; /* Relleno del botón */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none; /* Quita el borde del botón */
-    border-radius: 4px; /* Borde redondeado */
-  }
-  
-  .btn:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
-  }
+}
+.tarjeta img {
+  width: 100%;
+  height: 200px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover;
+}

@@ -1,2 +1,12 @@
-<app-tarjetas></app-tarjetas>
+<div class="contenedor">
+    <h1>Galería de Productos</h1>
+    <div class="filtros">
+        <div class="buscador">
+            <input type="text" id="searchInput" placeholder="Buscador">
+        </div>
+    </div>
+    <div class="contenedor-tarjetas">
+        <app-tarjetas *ngFor="let producto of productos" [producto]="producto" />
+    </div>
+</div>
 
