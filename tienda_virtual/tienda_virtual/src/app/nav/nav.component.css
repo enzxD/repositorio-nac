@@ -1,6 +1,8 @@
 nav {
     background-color:#EF7763;
     padding: 10px 20px; 
+    float: left;
+    
   }
   
   ul {
@@ -10,7 +12,7 @@ nav {
   }
   
   li {
-    display: inline; 
+    display: flex;
     margin-right: 20px; 
   }
   
@@ -20,5 +22,5 @@ nav {
   }
   
   a:hover {
-    color: #ccc; 
+    color: #EF7763; 
   }
