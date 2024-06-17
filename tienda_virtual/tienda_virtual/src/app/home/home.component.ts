@@ -17,11 +17,10 @@ export class HomeComponent  {
 document.addEventListener('DOMContentLoaded', () => {
   const grande = document.querySelector('.grande') as HTMLElement;
   const punto = document.querySelectorAll('.punto') as NodeListOf<HTMLElement>;
-
   punto.forEach((cadaPunto, i) => {
     punto[i].addEventListener('click', () => {
       const posicion = i;
-      const operacion = posicion * -50;
+      const operacion = posicion * -30;
 
       grande.style.transform = `translateX(${operacion}%)`;
 

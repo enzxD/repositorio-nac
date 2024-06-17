@@ -20,7 +20,7 @@
 }
 
 .carrousel .grande {
-  width: 200%;
+  width: 250%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -36,12 +36,13 @@
 }
 
 .carrousel .img {
-  width: calc( 100% / 2 - 2em);
-  height: 500px;
+  width: calc(100% / 3 - 1em);
+  height: 520px;
   object-fit: cover;
   color: var(--negro);
   transition: all 0.4s ease;
   border-radius: 1em;
+  display: flex;
   background-color: var(--blanco);
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
@@ -57,17 +58,17 @@
 }
 
 .carrousel .punto {
-  width: 2em;
+  width: 3em;
   list-style-type: none;
-  height: 2em;
+  height: .5em;
   margin: 1em 1em 0;
   color: var(--negro);
   transition: all 0.4s ease;
   border-radius: 1em;
-  background-color: red;
+  background-color: gray;
   box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
 
 .carrousel .punto.activo {
-  background-color: lightblue;
+  background-color: green;
 }
