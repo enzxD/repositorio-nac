@@ -4,7 +4,10 @@ export interface Productos {
     price:       number;
     description: string;
     image:       string;
+   
 }
+
+
 
 
 
