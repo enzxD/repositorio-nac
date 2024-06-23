@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -9,25 +9,30 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 
-export class HomeComponent  {
+export class HomeComponent implements OnInit {
 
-}
+  constructor() { }
 
+  ngOnInit(): void {
+    this.initializeCarousel();
+  }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const grande = document.querySelector('.grande') as HTMLElement;
-  const punto = document.querySelectorAll('.punto') as NodeListOf<HTMLElement>;
-  punto.forEach((cadaPunto, i) => {
-    punto[i].addEventListener('click', () => {
-      const posicion = i;
-      const operacion = posicion * -30;
+  initializeCarousel(): void {
+    const grande = document.querySelector('.grande') as HTMLElement;
+    const punto = document.querySelectorAll('.punto') as NodeListOf<HTMLElement>;
 
-      grande.style.transform = `translateX(${operacion}%)`;
+    punto.forEach((_cadaPunto, i) => {
+      punto[i].addEventListener('click', () => {
+        const posicion = i;
+        const operacion = posicion * -30;
 
-      punto.forEach((cadaPunto, i) => {
-        punto[i].classList.remove('activo');
+        grande.style.transform = `translateX(${operacion}%)`;
+
+        punto.forEach((_cadaPunto, i) => {
+          punto[i].classList.remove('activo');
+        });
+        punto[i].classList.add('activo');
       });
-      punto[i].classList.add('activo');
     });
-  });
-});
+  }
+}

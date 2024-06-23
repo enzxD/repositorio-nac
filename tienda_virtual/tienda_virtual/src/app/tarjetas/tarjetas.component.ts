@@ -13,6 +13,7 @@ export class TarjetasComponent {
 
   private _router = inject(Router)
   
+  
   @Input() producto?: Productos;
 
   verMas(id?: number)

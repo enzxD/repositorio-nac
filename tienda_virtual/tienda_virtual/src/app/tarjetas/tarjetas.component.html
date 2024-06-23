@@ -4,6 +4,8 @@
     <h2>{{ producto?.title?.slice(0, 30) }}</h2>
     <p>{{ producto?.description?.slice(0, 100) }}</p>
     <h2>{{ producto?.price | currency }}</h2>
+    <button class="btn" (click)="verMas(producto?.id)">Detalles</button>
   </div>
 </div>
+
 

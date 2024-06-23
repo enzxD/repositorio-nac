@@ -19,3 +19,8 @@ export class ProductosService {
     return this.http.get<Productos>(`${this.urlApi}/${id}`);
   }
 }
+
+
+
+
+
