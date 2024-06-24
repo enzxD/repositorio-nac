@@ -5,12 +5,13 @@
   flex-direction: column; 
   align-items: center;
   font-size: 30px;
+  height: 100vh;
 }
 
 .product-details {
     display: flex;
     align-items: center;
-    
+    flex-grow: 1;
 }
 
 .image img {
