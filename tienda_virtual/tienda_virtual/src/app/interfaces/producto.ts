@@ -4,17 +4,7 @@ export interface Productos {
     price:       number;
     description: string;
     image:       string;
+    name:        string;
    
-}
-export enum Category {
-    Electronics = "electronics",
-    Jewelery = "jewelery",
-    MenSClothing = "men's clothing",
-    WomenSClothing = "women's clothing",
-}
-
-export interface Rating {
-    rate:  number;
-    count: number;
 }
 

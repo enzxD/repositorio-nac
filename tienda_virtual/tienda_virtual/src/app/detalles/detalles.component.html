@@ -1,22 +1,22 @@
 <div class="container">
     @if (loading) {
-    <h5>Cargando producto seleccionado</h5>
+        <h5>Cargando producto seleccionado</h5>
     }
-    @if(!loading){
-        <h1>Su Producto</h1>
-        
-        <div class="container-detalles">
-             <div class="imagen">
+
+    @if (!loading) {
+        <div class="product-details">
+            <div class="image">
                 <img src="{{producto?.image}}" alt="">
             </div>
-            <div class="container">
-                <div class="titulo">
+            <div class="info">
+                <h1>Producto Seleccionado</h1>
+                <div class="title">
                     <h2>{{producto?.title}}</h2>
                 </div>
-                <div class="descripcion">
-                    <p>Descripcion del producto: {{producto?.description}}</p>
+                <div class="description">
+                    <p>Descripción del producto: {{producto?.description}}</p>
                 </div>
-                <div class="precio">
+                <div class="price">
                     <p>{{producto?.price | currency}}</p>
                 </div>
                 <button>Comprar</button>
@@ -24,4 +24,8 @@
         </div>
     }
 
-</div>
+    </div>
+    
+
+
+

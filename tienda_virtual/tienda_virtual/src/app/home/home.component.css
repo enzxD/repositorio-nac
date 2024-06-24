@@ -66,6 +66,7 @@
   transition: all 0.4s ease;
   border-radius: 1em;
   background-color: gray;
+  cursor: pointer;
   box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
 

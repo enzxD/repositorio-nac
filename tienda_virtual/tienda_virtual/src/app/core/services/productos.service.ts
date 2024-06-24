@@ -18,6 +18,7 @@ export class ProductosService {
   getProductoById(id: number): Observable<any>{
     return this.http.get<Productos>(`${this.urlApi}/${id}`);
   }
+  
 }
 
 
